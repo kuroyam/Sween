@@ -1,0 +1,783 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		490D2BCC1EDD23BA00ABEB21 /* Sween.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 490D2BC21EDD23BA00ABEB21 /* Sween.framework */; };
+		490D2BD11EDD23BA00ABEB21 /* SweenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490D2BD01EDD23BA00ABEB21 /* SweenTests.swift */; };
+		490D2BD31EDD23BA00ABEB21 /* Sween.h in Headers */ = {isa = PBXBuildFile; fileRef = 490D2BC51EDD23BA00ABEB21 /* Sween.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		490D2C1D1EDD261200ABEB21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490D2C1C1EDD261200ABEB21 /* AppDelegate.swift */; };
+		490D2C1F1EDD261200ABEB21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490D2C1E1EDD261200ABEB21 /* ViewController.swift */; };
+		490D2C221EDD261200ABEB21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 490D2C201EDD261200ABEB21 /* Main.storyboard */; };
+		490D2C241EDD261200ABEB21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 490D2C231EDD261200ABEB21 /* Assets.xcassets */; };
+		490D2C271EDD261200ABEB21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 490D2C251EDD261200ABEB21 /* LaunchScreen.storyboard */; };
+		490D2C321EDD261300ABEB21 /* SweenDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490D2C311EDD261300ABEB21 /* SweenDemoTests.swift */; };
+		490D2C3D1EDD261300ABEB21 /* SweenDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490D2C3C1EDD261300ABEB21 /* SweenDemoUITests.swift */; };
+		490D2C4A1EDD36AD00ABEB21 /* Sween.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490D2C491EDD36AD00ABEB21 /* Sween.swift */; };
+		490D2C4B1EDD37DA00ABEB21 /* Sween.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 490D2BC21EDD23BA00ABEB21 /* Sween.framework */; };
+		490D2C4D1EDD66D000ABEB21 /* Easing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490D2C4C1EDD66D000ABEB21 /* Easing.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		490D2BCD1EDD23BA00ABEB21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 490D2BB91EDD23BA00ABEB21 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 490D2BC11EDD23BA00ABEB21;
+			remoteInfo = Sween;
+		};
+		490D2C2E1EDD261300ABEB21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 490D2BB91EDD23BA00ABEB21 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 490D2C191EDD261200ABEB21;
+			remoteInfo = SweenDemo;
+		};
+		490D2C391EDD261300ABEB21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 490D2BB91EDD23BA00ABEB21 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 490D2C191EDD261200ABEB21;
+			remoteInfo = SweenDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		490D2BC21EDD23BA00ABEB21 /* Sween.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sween.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		490D2BC51EDD23BA00ABEB21 /* Sween.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sween.h; sourceTree = "<group>"; };
+		490D2BC61EDD23BA00ABEB21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		490D2BCB1EDD23BA00ABEB21 /* SweenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SweenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		490D2BD01EDD23BA00ABEB21 /* SweenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweenTests.swift; sourceTree = "<group>"; };
+		490D2BD21EDD23BA00ABEB21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		490D2C1A1EDD261200ABEB21 /* SweenDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SweenDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		490D2C1C1EDD261200ABEB21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		490D2C1E1EDD261200ABEB21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		490D2C211EDD261200ABEB21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		490D2C231EDD261200ABEB21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		490D2C261EDD261200ABEB21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		490D2C281EDD261200ABEB21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		490D2C2D1EDD261200ABEB21 /* SweenDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SweenDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		490D2C311EDD261300ABEB21 /* SweenDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweenDemoTests.swift; sourceTree = "<group>"; };
+		490D2C331EDD261300ABEB21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		490D2C381EDD261300ABEB21 /* SweenDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SweenDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		490D2C3C1EDD261300ABEB21 /* SweenDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweenDemoUITests.swift; sourceTree = "<group>"; };
+		490D2C3E1EDD261300ABEB21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		490D2C491EDD36AD00ABEB21 /* Sween.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sween.swift; sourceTree = "<group>"; };
+		490D2C4C1EDD66D000ABEB21 /* Easing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Easing.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		490D2BBE1EDD23BA00ABEB21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		490D2BC81EDD23BA00ABEB21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				490D2BCC1EDD23BA00ABEB21 /* Sween.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		490D2C171EDD261200ABEB21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				490D2C4B1EDD37DA00ABEB21 /* Sween.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		490D2C2A1EDD261200ABEB21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		490D2C351EDD261300ABEB21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		490D2BB81EDD23BA00ABEB21 = {
+			isa = PBXGroup;
+			children = (
+				490D2BC41EDD23BA00ABEB21 /* Sween */,
+				490D2BCF1EDD23BA00ABEB21 /* SweenTests */,
+				490D2C481EDD261F00ABEB21 /* SweenDemo */,
+				490D2BC31EDD23BA00ABEB21 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		490D2BC31EDD23BA00ABEB21 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				490D2BC21EDD23BA00ABEB21 /* Sween.framework */,
+				490D2BCB1EDD23BA00ABEB21 /* SweenTests.xctest */,
+				490D2C1A1EDD261200ABEB21 /* SweenDemo.app */,
+				490D2C2D1EDD261200ABEB21 /* SweenDemoTests.xctest */,
+				490D2C381EDD261300ABEB21 /* SweenDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		490D2BC41EDD23BA00ABEB21 /* Sween */ = {
+			isa = PBXGroup;
+			children = (
+				490D2BC51EDD23BA00ABEB21 /* Sween.h */,
+				490D2C4C1EDD66D000ABEB21 /* Easing.swift */,
+				490D2C491EDD36AD00ABEB21 /* Sween.swift */,
+				490D2BC61EDD23BA00ABEB21 /* Info.plist */,
+			);
+			path = Sween;
+			sourceTree = "<group>";
+		};
+		490D2BCF1EDD23BA00ABEB21 /* SweenTests */ = {
+			isa = PBXGroup;
+			children = (
+				490D2BD01EDD23BA00ABEB21 /* SweenTests.swift */,
+				490D2BD21EDD23BA00ABEB21 /* Info.plist */,
+			);
+			path = SweenTests;
+			sourceTree = "<group>";
+		};
+		490D2C1B1EDD261200ABEB21 /* SweenDemo */ = {
+			isa = PBXGroup;
+			children = (
+				490D2C1C1EDD261200ABEB21 /* AppDelegate.swift */,
+				490D2C1E1EDD261200ABEB21 /* ViewController.swift */,
+				490D2C201EDD261200ABEB21 /* Main.storyboard */,
+				490D2C231EDD261200ABEB21 /* Assets.xcassets */,
+				490D2C251EDD261200ABEB21 /* LaunchScreen.storyboard */,
+				490D2C281EDD261200ABEB21 /* Info.plist */,
+			);
+			path = SweenDemo;
+			sourceTree = "<group>";
+		};
+		490D2C301EDD261300ABEB21 /* SweenDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				490D2C311EDD261300ABEB21 /* SweenDemoTests.swift */,
+				490D2C331EDD261300ABEB21 /* Info.plist */,
+			);
+			path = SweenDemoTests;
+			sourceTree = "<group>";
+		};
+		490D2C3B1EDD261300ABEB21 /* SweenDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				490D2C3C1EDD261300ABEB21 /* SweenDemoUITests.swift */,
+				490D2C3E1EDD261300ABEB21 /* Info.plist */,
+			);
+			path = SweenDemoUITests;
+			sourceTree = "<group>";
+		};
+		490D2C481EDD261F00ABEB21 /* SweenDemo */ = {
+			isa = PBXGroup;
+			children = (
+				490D2C1B1EDD261200ABEB21 /* SweenDemo */,
+				490D2C301EDD261300ABEB21 /* SweenDemoTests */,
+				490D2C3B1EDD261300ABEB21 /* SweenDemoUITests */,
+			);
+			path = SweenDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		490D2BBF1EDD23BA00ABEB21 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				490D2BD31EDD23BA00ABEB21 /* Sween.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		490D2BC11EDD23BA00ABEB21 /* Sween */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 490D2BD61EDD23BA00ABEB21 /* Build configuration list for PBXNativeTarget "Sween" */;
+			buildPhases = (
+				490D2BBD1EDD23BA00ABEB21 /* Sources */,
+				490D2BBE1EDD23BA00ABEB21 /* Frameworks */,
+				490D2BBF1EDD23BA00ABEB21 /* Headers */,
+				490D2BC01EDD23BA00ABEB21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sween;
+			productName = Sween;
+			productReference = 490D2BC21EDD23BA00ABEB21 /* Sween.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		490D2BCA1EDD23BA00ABEB21 /* SweenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 490D2BD91EDD23BA00ABEB21 /* Build configuration list for PBXNativeTarget "SweenTests" */;
+			buildPhases = (
+				490D2BC71EDD23BA00ABEB21 /* Sources */,
+				490D2BC81EDD23BA00ABEB21 /* Frameworks */,
+				490D2BC91EDD23BA00ABEB21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				490D2BCE1EDD23BA00ABEB21 /* PBXTargetDependency */,
+			);
+			name = SweenTests;
+			productName = SweenTests;
+			productReference = 490D2BCB1EDD23BA00ABEB21 /* SweenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		490D2C191EDD261200ABEB21 /* SweenDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 490D2C451EDD261300ABEB21 /* Build configuration list for PBXNativeTarget "SweenDemo" */;
+			buildPhases = (
+				490D2C161EDD261200ABEB21 /* Sources */,
+				490D2C171EDD261200ABEB21 /* Frameworks */,
+				490D2C181EDD261200ABEB21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SweenDemo;
+			productName = SweenDemo;
+			productReference = 490D2C1A1EDD261200ABEB21 /* SweenDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		490D2C2C1EDD261200ABEB21 /* SweenDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 490D2C461EDD261300ABEB21 /* Build configuration list for PBXNativeTarget "SweenDemoTests" */;
+			buildPhases = (
+				490D2C291EDD261200ABEB21 /* Sources */,
+				490D2C2A1EDD261200ABEB21 /* Frameworks */,
+				490D2C2B1EDD261200ABEB21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				490D2C2F1EDD261300ABEB21 /* PBXTargetDependency */,
+			);
+			name = SweenDemoTests;
+			productName = SweenDemoTests;
+			productReference = 490D2C2D1EDD261200ABEB21 /* SweenDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		490D2C371EDD261300ABEB21 /* SweenDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 490D2C471EDD261300ABEB21 /* Build configuration list for PBXNativeTarget "SweenDemoUITests" */;
+			buildPhases = (
+				490D2C341EDD261300ABEB21 /* Sources */,
+				490D2C351EDD261300ABEB21 /* Frameworks */,
+				490D2C361EDD261300ABEB21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				490D2C3A1EDD261300ABEB21 /* PBXTargetDependency */,
+			);
+			name = SweenDemoUITests;
+			productName = SweenDemoUITests;
+			productReference = 490D2C381EDD261300ABEB21 /* SweenDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		490D2BB91EDD23BA00ABEB21 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = kuroyam;
+				TargetAttributes = {
+					490D2BC11EDD23BA00ABEB21 = {
+						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					490D2BCA1EDD23BA00ABEB21 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					490D2C191EDD261200ABEB21 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					490D2C2C1EDD261200ABEB21 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 490D2C191EDD261200ABEB21;
+					};
+					490D2C371EDD261300ABEB21 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 490D2C191EDD261200ABEB21;
+					};
+				};
+			};
+			buildConfigurationList = 490D2BBC1EDD23BA00ABEB21 /* Build configuration list for PBXProject "Sween" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 490D2BB81EDD23BA00ABEB21;
+			productRefGroup = 490D2BC31EDD23BA00ABEB21 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				490D2BC11EDD23BA00ABEB21 /* Sween */,
+				490D2BCA1EDD23BA00ABEB21 /* SweenTests */,
+				490D2C191EDD261200ABEB21 /* SweenDemo */,
+				490D2C2C1EDD261200ABEB21 /* SweenDemoTests */,
+				490D2C371EDD261300ABEB21 /* SweenDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		490D2BC01EDD23BA00ABEB21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		490D2BC91EDD23BA00ABEB21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		490D2C181EDD261200ABEB21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				490D2C271EDD261200ABEB21 /* LaunchScreen.storyboard in Resources */,
+				490D2C241EDD261200ABEB21 /* Assets.xcassets in Resources */,
+				490D2C221EDD261200ABEB21 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		490D2C2B1EDD261200ABEB21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		490D2C361EDD261300ABEB21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		490D2BBD1EDD23BA00ABEB21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				490D2C4D1EDD66D000ABEB21 /* Easing.swift in Sources */,
+				490D2C4A1EDD36AD00ABEB21 /* Sween.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		490D2BC71EDD23BA00ABEB21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				490D2BD11EDD23BA00ABEB21 /* SweenTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		490D2C161EDD261200ABEB21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				490D2C1F1EDD261200ABEB21 /* ViewController.swift in Sources */,
+				490D2C1D1EDD261200ABEB21 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		490D2C291EDD261200ABEB21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				490D2C321EDD261300ABEB21 /* SweenDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		490D2C341EDD261300ABEB21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				490D2C3D1EDD261300ABEB21 /* SweenDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		490D2BCE1EDD23BA00ABEB21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 490D2BC11EDD23BA00ABEB21 /* Sween */;
+			targetProxy = 490D2BCD1EDD23BA00ABEB21 /* PBXContainerItemProxy */;
+		};
+		490D2C2F1EDD261300ABEB21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 490D2C191EDD261200ABEB21 /* SweenDemo */;
+			targetProxy = 490D2C2E1EDD261300ABEB21 /* PBXContainerItemProxy */;
+		};
+		490D2C3A1EDD261300ABEB21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 490D2C191EDD261200ABEB21 /* SweenDemo */;
+			targetProxy = 490D2C391EDD261300ABEB21 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		490D2C201EDD261200ABEB21 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				490D2C211EDD261200ABEB21 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		490D2C251EDD261200ABEB21 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				490D2C261EDD261200ABEB21 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		490D2BD41EDD23BA00ABEB21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		490D2BD51EDD23BA00ABEB21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		490D2BD71EDD23BA00ABEB21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sween/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kuroyam.Sween;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		490D2BD81EDD23BA00ABEB21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sween/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kuroyam.Sween;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		490D2BDA1EDD23BA00ABEB21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = SweenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kuroyam.SweenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		490D2BDB1EDD23BA00ABEB21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = SweenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kuroyam.SweenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		490D2C3F1EDD261300ABEB21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SweenDemo/SweenDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kuroyam.SweenDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		490D2C401EDD261300ABEB21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SweenDemo/SweenDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kuroyam.SweenDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		490D2C411EDD261300ABEB21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SweenDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kuroyam.SweenDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SweenDemo.app/SweenDemo";
+			};
+			name = Debug;
+		};
+		490D2C421EDD261300ABEB21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SweenDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kuroyam.SweenDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SweenDemo.app/SweenDemo";
+			};
+			name = Release;
+		};
+		490D2C431EDD261300ABEB21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = SweenDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kuroyam.SweenDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SweenDemo;
+			};
+			name = Debug;
+		};
+		490D2C441EDD261300ABEB21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = SweenDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kuroyam.SweenDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SweenDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		490D2BBC1EDD23BA00ABEB21 /* Build configuration list for PBXProject "Sween" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				490D2BD41EDD23BA00ABEB21 /* Debug */,
+				490D2BD51EDD23BA00ABEB21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		490D2BD61EDD23BA00ABEB21 /* Build configuration list for PBXNativeTarget "Sween" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				490D2BD71EDD23BA00ABEB21 /* Debug */,
+				490D2BD81EDD23BA00ABEB21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		490D2BD91EDD23BA00ABEB21 /* Build configuration list for PBXNativeTarget "SweenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				490D2BDA1EDD23BA00ABEB21 /* Debug */,
+				490D2BDB1EDD23BA00ABEB21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		490D2C451EDD261300ABEB21 /* Build configuration list for PBXNativeTarget "SweenDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				490D2C3F1EDD261300ABEB21 /* Debug */,
+				490D2C401EDD261300ABEB21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		490D2C461EDD261300ABEB21 /* Build configuration list for PBXNativeTarget "SweenDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				490D2C411EDD261300ABEB21 /* Debug */,
+				490D2C421EDD261300ABEB21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		490D2C471EDD261300ABEB21 /* Build configuration list for PBXNativeTarget "SweenDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				490D2C431EDD261300ABEB21 /* Debug */,
+				490D2C441EDD261300ABEB21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 490D2BB91EDD23BA00ABEB21 /* Project object */;
+}
