@@ -67,13 +67,11 @@ public struct Back: Easing {
     }
     
     public static var InOut: Curve = { time, begin, diff, duration in
-        var s = 1.70158
+        let s = 1.70158 * 1.525
         var t = time / (duration / 2)
         if t < 1 {
-            s *= 1.525
             return diff / 2 * (t * t * ((s + 1) * t - s)) + begin
         } else {
-            s += (1.525 * 1.525)
             t -= 2
             return diff / 2 * (t * t * ((s + 1) * t + s) + 2) + begin
         }
