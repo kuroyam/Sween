@@ -67,17 +67,12 @@ public class Sween {
         return self
     }
     
-    public func from(_ rect: CGRect) -> Sween {
-        fromRect = rect
-        return self
-    }
-    
-    public func to(_ rect: CGRect) -> Sween {
+    public func transform(to rect: CGRect) -> Sween {
         toRect = rect
         return self
     }
     
-    public func moveTo(_ point: CGPoint) -> Sween {
+    public func move(to point: CGPoint) -> Sween {
         toRect = CGRect(origin: point, size: toRect.size)
         return self
     }
@@ -88,7 +83,7 @@ public class Sween {
     }
     
     public func loop(count: Int = Sween.Loop.infiniteLoop, interval: Double = 0.0) -> Sween {
-        self.loop = Loop(count: count, interval: interval)
+        loop = Loop(count: count, interval: interval)
         return self
     }
     
@@ -112,7 +107,7 @@ public class Sween {
             x:      easing(current, Double(fromRect.origin.x), Double(toRect.origin.x - fromRect.origin.x), duration),
             y:      easing(current, Double(fromRect.origin.y), Double(toRect.origin.y - fromRect.origin.y), duration),
             width:  easing(current, Double(fromRect.width),    Double(toRect.width    - fromRect.width),    duration),
-            height: easing(current, Double(fromRect.height)  , Double(toRect.height   - fromRect.height),   duration)
+            height: easing(current, Double(fromRect.height),   Double(toRect.height   - fromRect.height),   duration)
         )
         
         if time > duration + loop.interval {

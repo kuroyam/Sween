@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         view.addSubview(linearView)
         
         Sween(with: linearView)
-            .moveTo(CGPoint(x: 325.0, y: 80.0))
+            .move(to: CGPoint(x: 325.0, y: 80.0))
             .duration(1.0)
             .easing(Easing.Linear)
             .loop(interval: 1.0)
@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         view.addSubview(inQuadView)
         
         Sween(with: inQuadView)
-            .moveTo(CGPoint(x: 325.0, y: 100.0))
+            .move(to: CGPoint(x: 325.0, y: 100.0))
             .duration(1.0)
             .easing(Easing.InQuad)
             .loop(interval: 1.0)
@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         view.addSubview(outQuadView)
         
         Sween(with: outQuadView)
-            .moveTo(CGPoint(x: 325.0, y: 120.0))
+            .move(to: CGPoint(x: 325.0, y: 120.0))
             .duration(1.0)
             .easing(Easing.OutQuad)
             .loop(interval: 1.0)
@@ -52,7 +52,7 @@ class ViewController: UIViewController {
         view.addSubview(inOutQuadView)
         
         Sween(with: inOutQuadView)
-            .moveTo(CGPoint(x: 325.0, y: 140.0))
+            .move(to: CGPoint(x: 325.0, y: 140.0))
             .duration(1.0)
             .easing(Easing.InOutQuad)
             .loop(interval: 1.0)
@@ -63,7 +63,7 @@ class ViewController: UIViewController {
         view.addSubview(inBackView)
         
         Sween(with: inBackView)
-            .moveTo(CGPoint(x: 325.0, y: 160.0))
+            .move(to: CGPoint(x: 325.0, y: 160.0))
             .duration(1.0)
             .easing(Easing.InBack)
             .loop(interval: 1.0)
@@ -74,7 +74,7 @@ class ViewController: UIViewController {
         view.addSubview(outBackView)
         
         Sween(with: outBackView)
-            .moveTo(CGPoint(x: 325.0, y: 180.0))
+            .move(to: CGPoint(x: 325.0, y: 180.0))
             .duration(1.0)
             .easing(Easing.OutBack)
             .loop(interval: 1.0)
@@ -85,7 +85,7 @@ class ViewController: UIViewController {
         view.addSubview(inOutBackView)
         
         Sween(with: inOutBackView)
-            .moveTo(CGPoint(x: 325.0, y: 200.0))
+            .move(to: CGPoint(x: 325.0, y: 200.0))
             .duration(1.0)
             .easing(Easing.InOutBack)
             .loop(interval: 1.0)
