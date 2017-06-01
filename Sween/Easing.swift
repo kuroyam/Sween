@@ -8,25 +8,39 @@
 
 import Foundation
 
-public struct Easing {
+public protocol Easing {
+    typealias Curve = (_ time: Double, _ begin: Double, _ diff: Double, _ duration: Double) -> Double
     
-    public typealias Curve = (_ time: Double, _ begin: Double, _ diff: Double, _ duration: Double) -> Double
+    static var In:    Curve { get }
+    static var Out:   Curve { get }
+    static var InOut: Curve { get }
+}
+
+public struct Linear: Easing {
     
-    public static var Linear: Curve = { time, begin, diff, duration in
+    public static var Default: Curve = { time, begin, diff, duration in
         return diff * time / duration + begin
     }
     
-    public static var InQuad: Curve = { time, begin, diff, duration in
+    public static var In:    Curve = Default
+    public static var Out:   Curve = Default
+    public static var InOut: Curve = Default
+    
+}
+
+public struct Quad: Easing {
+    
+    public static var In: Curve = { time, begin, diff, duration in
         let t = time / duration
         return diff * t * t + begin
     }
     
-    public static var OutQuad: Curve = { time, begin, diff, duration in
+    public static var Out: Curve = { time, begin, diff, duration in
         let t = time / duration
         return -diff * t * (t - 2) + begin
     }
     
-    public static var InOutQuad: Curve = { time, begin, diff, duration in
+    public static var InOut: Curve = { time, begin, diff, duration in
         var t = time / (duration / 2)
         if t < 1 {
             return diff / 2 * t * t + begin
@@ -36,19 +50,23 @@ public struct Easing {
         }
     }
     
-    public static var InBack: Curve = { time, begin, diff, duration in
+}
+
+public struct Back: Easing {
+    
+    public static var In: Curve = { time, begin, diff, duration in
         let s = 1.70158
         let t = time / duration
         return diff * t * t * ((s + 1) * t - s) + begin
     }
     
-    public static var OutBack: Curve = { time, begin, diff, duration in
+    public static var Out: Curve = { time, begin, diff, duration in
         let s = 1.70158
         let t = time / duration - 1
         return diff * (t * t * ((s + 1) * t + s) + 1) + begin
     }
     
-    public static var InOutBack: Curve = { time, begin, diff, duration in
+    public static var InOut: Curve = { time, begin, diff, duration in
         var s = 1.70158
         var t = time / (duration / 2)
         if t < 1 {

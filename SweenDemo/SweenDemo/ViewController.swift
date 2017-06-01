@@ -21,7 +21,6 @@ class ViewController: UIViewController {
         Sween(with: linearView)
             .move(to: CGPoint(x: 325.0, y: 80.0))
             .duration(1.0)
-            .easing(Easing.Linear)
             .loop(interval: 1.0)
             .animate()
         
@@ -32,7 +31,7 @@ class ViewController: UIViewController {
         Sween(with: inQuadView)
             .move(to: CGPoint(x: 325.0, y: 100.0))
             .duration(1.0)
-            .easing(Easing.InQuad)
+            .ease(Quad.In)
             .loop(interval: 1.0)
             .animate()
         
@@ -43,7 +42,7 @@ class ViewController: UIViewController {
         Sween(with: outQuadView)
             .move(to: CGPoint(x: 325.0, y: 120.0))
             .duration(1.0)
-            .easing(Easing.OutQuad)
+            .ease(Quad.Out)
             .loop(interval: 1.0)
             .animate()
         
@@ -54,7 +53,7 @@ class ViewController: UIViewController {
         Sween(with: inOutQuadView)
             .move(to: CGPoint(x: 325.0, y: 140.0))
             .duration(1.0)
-            .easing(Easing.InOutQuad)
+            .ease(Quad.InOut)
             .loop(interval: 1.0)
             .animate()
         
@@ -65,7 +64,7 @@ class ViewController: UIViewController {
         Sween(with: inBackView)
             .move(to: CGPoint(x: 325.0, y: 160.0))
             .duration(1.0)
-            .easing(Easing.InBack)
+            .ease(Back.In)
             .loop(interval: 1.0)
             .animate()
         
@@ -76,7 +75,7 @@ class ViewController: UIViewController {
         Sween(with: outBackView)
             .move(to: CGPoint(x: 325.0, y: 180.0))
             .duration(1.0)
-            .easing(Easing.OutBack)
+            .ease(Back.Out)
             .loop(interval: 1.0)
             .animate()
         
@@ -87,7 +86,7 @@ class ViewController: UIViewController {
         Sween(with: inOutBackView)
             .move(to: CGPoint(x: 325.0, y: 200.0))
             .duration(1.0)
-            .easing(Easing.InOutBack)
+            .ease(Back.InOut)
             .loop(interval: 1.0)
             .animate()
     }

@@ -47,7 +47,7 @@ public class Sween {
     private var fromRect: CGRect
     private var toRect:   CGRect
     private var duration: Double = 0.1
-    private var easing:   Easing.Curve = Easing.Linear
+    private var easing:   Easing.Curve = Linear.Default
     
     private var displayLink: CADisplayLink?
     private var startTimestamp: CFTimeInterval = 0
@@ -77,7 +77,7 @@ public class Sween {
         return self
     }
     
-    public func easing(_ easing: @escaping Easing.Curve) -> Sween {
+    public func ease(_ easing: @escaping Easing.Curve) -> Sween {
         self.easing = easing
         return self
     }
