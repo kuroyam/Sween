@@ -11,10 +11,42 @@ import UIKit
 
 public class Sween {
     
+    class Loop {
+        
+        static let infiniteLoop = -1
+        
+        let loopCount: Int
+        let interval: Double
+        
+        private var counter = 0
+        
+        init(count: Int, interval: Double) {
+            self.loopCount = count
+            self.interval  = interval
+        }
+        
+        var completed: Bool {
+            if loopCount == Loop.infiniteLoop {
+                return false
+            }
+            return counter >= loopCount
+        }
+        
+        func increment() {
+            if counter == Int.max {
+                counter = 0
+            }
+            counter += 1
+        }
+        
+    }
+    
+    private var loop = Sween.Loop(count: 0, interval: 0)
+    
     private let view:     UIView
     private var fromRect: CGRect
     private var toRect:   CGRect
-    private var duration: CGFloat = 0.1
+    private var duration: Double = 0.1
     private var easing:   Easing.Curve = Easing.Linear
     
     private var displayLink: CADisplayLink?
@@ -30,7 +62,7 @@ public class Sween {
         displayLink?.invalidate()
     }
     
-    public func duration(_ duration: CGFloat) -> Sween {
+    public func duration(_ duration: Double) -> Sween {
         self.duration = duration
         return self
     }
@@ -55,6 +87,11 @@ public class Sween {
         return self
     }
     
+    public func loop(count: Int = Sween.Loop.infiniteLoop, interval: Double = 0.0) -> Sween {
+        self.loop = Loop(count: count, interval: interval)
+        return self
+    }
+    
     public func animate() {
         displayLink = CADisplayLink(target: self, selector: #selector(displayDidRefresh(_:)))
         displayLink?.add(to: RunLoop.main, forMode: RunLoopMode.defaultRunLoopMode)
@@ -65,23 +102,26 @@ public class Sween {
             startTimestamp = displayLink.timestamp
         }
         
-        let current: CGFloat = CGFloat(displayLink.timestamp - startTimestamp)
+        let elapsedTime = displayLink.timestamp - startTimestamp
+        update(with: elapsedTime)
+    }
+    
+    private func update(with time: CFTimeInterval) {
+        let current = time >= duration ? duration : time
+        view.frame = CGRect(
+            x:      easing(current, Double(fromRect.origin.x), Double(toRect.origin.x - fromRect.origin.x), duration),
+            y:      easing(current, Double(fromRect.origin.y), Double(toRect.origin.y - fromRect.origin.y), duration),
+            width:  easing(current, Double(fromRect.width),    Double(toRect.width    - fromRect.width),    duration),
+            height: easing(current, Double(fromRect.height)  , Double(toRect.height   - fromRect.height),   duration)
+        )
         
-        if current >= duration {
-            view.frame = CGRect(
-                x:      easing(duration, fromRect.origin.x, toRect.origin.x - fromRect.origin.x, duration),
-                y:      easing(duration, fromRect.origin.y, toRect.origin.y - fromRect.origin.y, duration),
-                width:  easing(duration, fromRect.width,    toRect.width    - fromRect.width,    duration),
-                height: easing(duration, fromRect.height  , toRect.height   - fromRect.height,   duration)
-            )
-            displayLink.invalidate()
-        } else {
-            view.frame = CGRect(
-                x:      easing(current, fromRect.origin.x, toRect.origin.x - fromRect.origin.x, duration),
-                y:      easing(current, fromRect.origin.y, toRect.origin.y - fromRect.origin.y, duration),
-                width:  easing(current, fromRect.width,    toRect.width    - fromRect.width,    duration),
-                height: easing(current, fromRect.height  , toRect.height   - fromRect.height,   duration)
-            )
+        if time > duration + loop.interval {
+            loop.increment()
+            if loop.completed {
+                displayLink?.invalidate()
+            } else {
+                startTimestamp = 0
+            }
         }
     }
     

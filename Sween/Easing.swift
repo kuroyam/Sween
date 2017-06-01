@@ -10,7 +10,7 @@ import Foundation
 
 public struct Easing {
     
-    public typealias Curve = (_ time: CGFloat, _ begin: CGFloat, _ diff: CGFloat, _ duration: CGFloat) -> CGFloat
+    public typealias Curve = (_ time: Double, _ begin: Double, _ diff: Double, _ duration: Double) -> Double
     
     public static var Linear: Curve = { time, begin, diff, duration in
         return diff * time / duration + begin
@@ -37,19 +37,19 @@ public struct Easing {
     }
     
     public static var InBack: Curve = { time, begin, diff, duration in
-        let s: CGFloat = 1.70158
+        let s = 1.70158
         let t = time / duration
         return diff * t * t * ((s + 1) * t - s) + begin
     }
     
     public static var OutBack: Curve = { time, begin, diff, duration in
-        let s: CGFloat = 1.70158
+        let s = 1.70158
         let t = time / duration - 1
         return diff * (t * t * ((s + 1) * t + s) + 1) + begin
     }
     
     public static var InOutBack: Curve = { time, begin, diff, duration in
-        var s: CGFloat = 1.70158
+        var s = 1.70158
         var t = time / (duration / 2)
         if t < 1 {
             s *= 1.525
