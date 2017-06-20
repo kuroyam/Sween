@@ -14,81 +14,89 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Linear
         let linearView = UIView(frame: CGRect(x: 50.0, y: 80.0, width: 10.0, height: 10.0))
         linearView.backgroundColor = UIColor.blue
         view.addSubview(linearView)
         
-        Sween(with: linearView)
-            .move(to: CGPoint(x: 325.0, y: 80.0))
+        let linearTransform = Transform(with: linearView)
             .duration(1.0)
-            .loop(interval: 1.0)
-            .animate()
+            .to(CGPoint(x: 325.0, y: 80.0))
+            .ease(Linear.Default)
         
+        Sween(with: linearTransform).loop(interval: 1.0).animate()
+        
+        // InQuad
         let inQuadView = UIView(frame: CGRect(x: 50.0, y: 100.0, width: 10.0, height: 10.0))
         inQuadView.backgroundColor = UIColor.blue
         view.addSubview(inQuadView)
         
-        Sween(with: inQuadView)
-            .move(to: CGPoint(x: 325.0, y: 100.0))
+        let inQuadTransform = Transform(with: inQuadView)
             .duration(1.0)
+            .to(CGPoint(x: 325.0, y: 100.0))
             .ease(Quad.In)
-            .loop(interval: 1.0)
-            .animate()
         
+        Sween(with: inQuadTransform).loop(interval: 1.0).animate()
+        
+        // OutQuad
         let outQuadView = UIView(frame: CGRect(x: 50.0, y: 120.0, width: 10.0, height: 10.0))
         outQuadView.backgroundColor = UIColor.blue
         view.addSubview(outQuadView)
         
-        Sween(with: outQuadView)
-            .move(to: CGPoint(x: 325.0, y: 120.0))
+        let outQuadTransform = Transform(with: outQuadView)
             .duration(1.0)
+            .to(CGPoint(x: 325.0, y: 120.0))
             .ease(Quad.Out)
-            .loop(interval: 1.0)
-            .animate()
         
+        Sween(with: outQuadTransform).loop(interval: 1.0).animate()
+        
+        // InOutQuad
         let inOutQuadView = UIView(frame: CGRect(x: 50.0, y: 140.0, width: 10.0, height: 10.0))
         inOutQuadView.backgroundColor = UIColor.blue
         view.addSubview(inOutQuadView)
         
-        Sween(with: inOutQuadView)
-            .move(to: CGPoint(x: 325.0, y: 140.0))
+        let inOutQuadTransform = Transform(with: inOutQuadView)
             .duration(1.0)
+            .to(CGPoint(x: 325.0, y: 140.0))
             .ease(Quad.InOut)
-            .loop(interval: 1.0)
-            .animate()
         
+        Sween(with: inOutQuadTransform).loop(interval: 1.0).animate()
+        
+        // InBack
         let inBackView = UIView(frame: CGRect(x: 50.0, y: 160.0, width: 10.0, height: 10.0))
         inBackView.backgroundColor = UIColor.blue
         view.addSubview(inBackView)
         
-        Sween(with: inBackView)
-            .move(to: CGPoint(x: 325.0, y: 160.0))
+        let inBackTransform = Transform(with: inBackView)
             .duration(1.0)
+            .to(CGPoint(x: 325.0, y: 160.0))
             .ease(Back.In)
-            .loop(interval: 1.0)
-            .animate()
         
+        Sween(with: inBackTransform).loop(interval: 1.0).animate()
+        
+        // OutBack
         let outBackView = UIView(frame: CGRect(x: 50.0, y: 180.0, width: 10.0, height: 10.0))
         outBackView.backgroundColor = UIColor.blue
         view.addSubview(outBackView)
         
-        Sween(with: outBackView)
-            .move(to: CGPoint(x: 325.0, y: 180.0))
+        let outBackTransform = Transform(with: outBackView)
             .duration(1.0)
+            .to(CGPoint(x: 325.0, y: 180.0))
             .ease(Back.Out)
-            .loop(interval: 1.0)
-            .animate()
         
+        Sween(with: outBackTransform).loop(interval: 1.0).animate()
+        
+        // InOutBack
         let inOutBackView = UIView(frame: CGRect(x: 50.0, y: 200.0, width: 10.0, height: 10.0))
         inOutBackView.backgroundColor = UIColor.blue
         view.addSubview(inOutBackView)
         
-        Sween(with: inOutBackView)
-            .move(to: CGPoint(x: 325.0, y: 200.0))
+        let inOutBackTransform = Transform(with: inOutBackView)
             .duration(1.0)
+            .to(CGPoint(x: 325.0, y: 200.0))
             .ease(Back.InOut)
-            .loop(interval: 1.0)
-            .animate()
+        
+        Sween(with: inOutBackTransform).loop(interval: 1.0).animate()
     }
     
 }
