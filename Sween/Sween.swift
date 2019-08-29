@@ -32,7 +32,7 @@ public class Sween<Action: Sweenable> {
     
     public func animate() {
         displayLink = CADisplayLink(target: self, selector: #selector(displayDidRefresh(_:)))
-        displayLink?.add(to: RunLoop.main, forMode: RunLoopMode.defaultRunLoopMode)
+        displayLink?.add(to: RunLoop.main, forMode: RunLoop.Mode.default)
     }
 
     @objc func displayDidRefresh(_ displayLink: CADisplayLink) {

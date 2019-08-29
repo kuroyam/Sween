@@ -10,7 +10,7 @@ import Foundation
 
 public class Loop {
     
-    static let infiniteLoop = -1
+    public static let infiniteLoop = -1
     
     let loopCount: Int
     let interval: Double
