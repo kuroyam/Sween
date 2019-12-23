@@ -20,10 +20,6 @@
 		490D2C4A1EDD36AD00ABEB21 /* Sween.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490D2C491EDD36AD00ABEB21 /* Sween.swift */; };
 		490D2C4B1EDD37DA00ABEB21 /* Sween.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 490D2BC21EDD23BA00ABEB21 /* Sween.framework */; };
 		490D2C4D1EDD66D000ABEB21 /* Easing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490D2C4C1EDD66D000ABEB21 /* Easing.swift */; };
-		4911E5AB1EF8D56A007F0D0E /* Loop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4911E5AA1EF8D56A007F0D0E /* Loop.swift */; };
-		4911E5AD1EF8E742007F0D0E /* Alpha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4911E5AC1EF8E742007F0D0E /* Alpha.swift */; };
-		49C3F3EF1EF7D726008223CF /* Sweenable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C3F3EE1EF7D726008223CF /* Sweenable.swift */; };
-		49C3F3F11EF7D840008223CF /* Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C3F3F01EF7D840008223CF /* Transform.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,10 +68,6 @@
 		490D2C3E1EDD261300ABEB21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		490D2C491EDD36AD00ABEB21 /* Sween.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sween.swift; sourceTree = "<group>"; };
 		490D2C4C1EDD66D000ABEB21 /* Easing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Easing.swift; sourceTree = "<group>"; };
-		4911E5AA1EF8D56A007F0D0E /* Loop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loop.swift; sourceTree = "<group>"; };
-		4911E5AC1EF8E742007F0D0E /* Alpha.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alpha.swift; sourceTree = "<group>"; };
-		49C3F3EE1EF7D726008223CF /* Sweenable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sweenable.swift; sourceTree = "<group>"; };
-		49C3F3F01EF7D840008223CF /* Transform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transform.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,11 +138,7 @@
 			children = (
 				490D2BC51EDD23BA00ABEB21 /* Sween.h */,
 				490D2C4C1EDD66D000ABEB21 /* Easing.swift */,
-				4911E5AA1EF8D56A007F0D0E /* Loop.swift */,
 				490D2C491EDD36AD00ABEB21 /* Sween.swift */,
-				49C3F3EE1EF7D726008223CF /* Sweenable.swift */,
-				4911E5AC1EF8E742007F0D0E /* Alpha.swift */,
-				49C3F3F01EF7D840008223CF /* Transform.swift */,
 				490D2BC61EDD23BA00ABEB21 /* Info.plist */,
 			);
 			path = Sween;
@@ -412,12 +400,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4911E5AB1EF8D56A007F0D0E /* Loop.swift in Sources */,
 				490D2C4D1EDD66D000ABEB21 /* Easing.swift in Sources */,
-				4911E5AD1EF8E742007F0D0E /* Alpha.swift in Sources */,
-				49C3F3F11EF7D840008223CF /* Transform.swift in Sources */,
 				490D2C4A1EDD36AD00ABEB21 /* Sween.swift in Sources */,
-				49C3F3EF1EF7D726008223CF /* Sweenable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
